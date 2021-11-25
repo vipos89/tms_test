@@ -28,7 +28,6 @@
 
         public function saveProduct(){
             move_uploaded_file($_FILES['img']['tmp_name'],  $_SERVER['DOCUMENT_ROOT'].'/'. $_FILES['img']['name']);
-            // sql
 
         }
 

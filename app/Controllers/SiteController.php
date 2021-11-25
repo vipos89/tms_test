@@ -14,6 +14,13 @@
     {
         public function index(){
 
+            $product = new Product();
+            $product->name = 'new prod';
+            $product->description = 10000;
+            $product->img = 'sdsfsdfdsfdsf';
+            $product->save();
+
+            die();
             Product::findById(1);
             render('main.php');
         }
